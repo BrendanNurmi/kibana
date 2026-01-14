@@ -72,6 +72,7 @@ export interface SearchableSnapshotAction {
 export interface RolloverAction {
   max_age?: string;
   max_docs?: number;
+  min_primary_shard_size?: string;
   max_primary_shard_size?: string;
   max_primary_shard_docs?: number;
   /**
@@ -87,7 +88,6 @@ export interface SerializedHotPhase extends SerializedPhase {
     readonly?: {};
     shrink?: ShrinkAction;
     downsample?: DownsampleAction;
-
     set_priority?: SetPriorityAction;
     /**
      * Only available on enterprise license
