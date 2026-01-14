@@ -23,6 +23,7 @@ export const ROLLOVER_FORM_PATHS = {
   maxDocs: 'phases.hot.actions.rollover.max_docs',
   maxAge: 'phases.hot.actions.rollover.max_age',
   maxSize: 'phases.hot.actions.rollover.max_size',
+  minPrimaryShardSize: 'phases.hot.actions.rollover.min_primary_shard_size',
   maxPrimaryShardSize: 'phases.hot.actions.rollover.max_primary_shard_size',
   maxPrimaryShardDocs: 'phases.hot.actions.rollover.max_primary_shard_docs',
 };

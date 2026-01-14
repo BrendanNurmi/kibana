@@ -36,6 +36,7 @@ import { Phase } from '../phase';
 
 import { useRolloverValueRequiredValidation } from './use_rollover_value_required_validation';
 import {
+  MinPrimaryShardSizeField,
   MaxPrimaryShardSizeField,
   MaxPrimaryShardDocsField,
   MaxAgeField,
@@ -145,6 +146,8 @@ export const HotPhase: FunctionComponent = () => {
                     <EuiSpacer size="s" />
                   </>
                 )}
+                <MinPrimaryShardSizeField />
+                <EuiSpacer />
 
                 <MaxPrimaryShardSizeField />
                 <EuiSpacer />

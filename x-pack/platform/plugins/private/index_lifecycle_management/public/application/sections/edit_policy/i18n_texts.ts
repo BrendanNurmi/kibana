@@ -131,6 +131,12 @@ export const i18nTexts = {
         defaultMessage: 'Snapshot repository',
       }
     ),
+    minPrimaryShardSizeLabel: i18n.translate(
+      'xpack.indexLifecycleMgmt.hotPhase.minimumPrimaryShardSizeLabel',
+      {
+        defaultMessage: 'Minimum primary shard size',
+      }
+    ),
     maxPrimaryShardSizeLabel: i18n.translate(
       'xpack.indexLifecycleMgmt.hotPhase.maximumPrimaryShardSizeLabel',
       {
@@ -141,6 +147,12 @@ export const i18nTexts = {
       'xpack.indexLifecycleMgmt.hotPhase.maximumPrimaryShardDocsLabel',
       {
         defaultMessage: 'Maximum docs in the primary shard',
+      }
+    ),
+    minPrimaryShardSizeUnitsLabel: i18n.translate(
+      'xpack.indexLifecycleMgmt.editPolicy.minimumPrimaryShardSizeAriaLabel',
+      {
+        defaultMessage: 'Minimum shard size units',
       }
     ),
     maxPrimaryShardSizeUnitsLabel: i18n.translate(

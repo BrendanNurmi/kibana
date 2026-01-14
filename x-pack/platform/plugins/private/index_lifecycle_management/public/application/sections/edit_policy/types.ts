@@ -52,6 +52,7 @@ interface HotPhaseMetaFields extends ForcemergeFields, ShrinkFields, DownsampleF
    */
   customRollover: {
     enabled: boolean;
+    minPrimaryShardSizeUnit?: string;
     maxPrimaryShardSizeUnit?: string;
     maxAgeUnit?: string;
 

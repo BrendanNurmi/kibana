@@ -4,6 +4,7 @@
  * 2.0; you may not use this file except in compliance with the Elastic License
  * 2.0.
  */
+export { MinPrimaryShardSizeField } from './min_primary_shard_size_field';
 
 export { MaxPrimaryShardSizeField } from './max_primary_shard_size_field';
 

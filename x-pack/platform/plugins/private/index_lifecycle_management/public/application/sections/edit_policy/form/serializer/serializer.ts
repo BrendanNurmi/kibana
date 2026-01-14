@@ -69,6 +69,12 @@ export const createSerializer =
               delete hotPhaseActions.rollover.max_docs;
             }
 
+            if (updatedPolicy.phases.hot!.actions.rollover?.min_primary_shard_size) {
+              hotPhaseActions.rollover.min_primary_shard_size = `${hotPhaseActions.rollover.min_primary_shard_size}${_meta.hot?.customRollover.minPrimaryShardSizeUnit}`;
+            } else {
+              delete hotPhaseActions.rollover.min_primary_shard_size;
+            }
+
             if (updatedPolicy.phases.hot!.actions.rollover?.max_primary_shard_size) {
               hotPhaseActions.rollover.max_primary_shard_size = `${hotPhaseActions.rollover.max_primary_shard_size}${_meta.hot?.customRollover.maxPrimaryShardSizeUnit}`;
             } else {
